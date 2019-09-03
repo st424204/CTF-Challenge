@@ -1,0 +1,15 @@
+service knote
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/knote/run.sh
+        socket_type = stream
+        protocol = tcp
+        user = knote
+        port = 54321
+        flags = REUSE
+        per_source = 5
+        rlimit_cpu = 3
+        nice = 18
+}
