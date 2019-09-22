@@ -79,8 +79,6 @@ int main(){
 		case 3:
 			Show();
 			break;
-		case 4:
-			exit(0);
 		default:
 			myputs("Wrong");
 			break;
