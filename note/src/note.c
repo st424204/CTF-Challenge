@@ -52,7 +52,6 @@ int menu(){
 	myputs("1. New a note");
 	myputs("2. Delte a note");
 	myputs("3. Show a note");
-	myputs("4. Exit");
 	myputs("********************");
 	myprintf("Choice: ");
 	return read_int();
