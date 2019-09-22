@@ -1,4 +1,4 @@
-bank:
+nosyscall:
     build: ./
     environment:
         - OLDPWD=/home

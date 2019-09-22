@@ -1,4 +1,4 @@
-bank:
+note:
     build: ./
     environment:
         - OLDPWD=/home
