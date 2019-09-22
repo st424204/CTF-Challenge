@@ -2,7 +2,7 @@ FROM ubuntu:19.04
 MAINTAINER Billy
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install xinetd -y
+RUN apt-get install xinetd libseccomp-dev -y
 RUN useradd -m note
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp
