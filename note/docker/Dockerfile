@@ -4,6 +4,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install xinetd libseccomp-dev -y
 RUN useradd -m note
+COPY ./share /home/note
+COPY ./xinetd /etc/xinetd.d/note
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp
 RUN chmod -R 774 /dev

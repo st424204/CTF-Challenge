@@ -16,10 +16,6 @@ knote:
         - XPC_FLAGS=0x0
         - TMPDIR=/tmp
         - RBENV_SHELL=bash
-    volumes:
-        - ./share:/home/knote:ro
-        - ./xinetd:/etc/xinetd.d/knote:ro
-        - ./tmp:/tmp:ro
     ports:
         - "54321:54321"
     expose:

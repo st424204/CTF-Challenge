@@ -4,6 +4,8 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install xinetd -y
 RUN useradd -m nosyscall
+COPY ./share /home/nosyscall
+COPY ./xinetd /etc/xinetd.d/nosyscall
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp
 RUN chmod -R 774 /dev

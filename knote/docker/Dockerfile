@@ -6,6 +6,8 @@ RUN apt-get install xinetd -y
 RUN apt-get install qemu-system-x86 -y
 RUN apt-get install socat
 RUN useradd -m knote
+COPY ./share /home/knote
+COPY ./xinetd /etc/xinetd.d/knote
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp
 RUN chmod -R 774 /dev

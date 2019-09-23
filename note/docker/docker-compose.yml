@@ -16,10 +16,6 @@ note:
         - XPC_FLAGS=0x0
         - TMPDIR=/tmp
         - RBENV_SHELL=bash
-    volumes:
-        - ./share:/home/note:ro
-        - ./xinetd:/etc/xinetd.d/note:ro
-        - ./tmp:/tmp:ro
     ports:
         - "54321:54321"
     expose:
