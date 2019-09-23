@@ -50,7 +50,7 @@ void Show(){
 int menu(){
 	myputs("********************");
 	myputs("1. New a note");
-	myputs("2. Delte a note");
+	myputs("2. Delete a note");
 	myputs("3. Show a note");
 	myputs("********************");
 	myprintf("Choice: ");
