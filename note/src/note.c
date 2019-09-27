@@ -14,7 +14,7 @@ void myputs(char* buf){
 
 char* note[0x100];
 int read_int(){
-	char buf[0x20];
+	char buf[0x8];
 	read(0,buf,sizeof(buf));
 	return atoi(buf);
 }
