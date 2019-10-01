@@ -6,6 +6,7 @@ RUN apt-get install xinetd -y
 RUN useradd -m nosyscall
 COPY ./share /home/nosyscall
 COPY ./xinetd /etc/xinetd.d/nosyscall
+COPY ./flag /home/nosyscall/flag
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp
 RUN chmod -R 774 /dev
