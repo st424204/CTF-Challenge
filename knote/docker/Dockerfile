@@ -7,6 +7,7 @@ RUN apt-get install qemu-system-x86 -y
 RUN useradd -m knote
 RUN echo "knote:knote" | chpasswd
 RUN sed -i 's/\/home\/knote:\/bin\/sh/\/home\/knote:\/home\/knote\/run\.sh/' /etc/passwd 
+RUN sed -i 's/#Port 22/Port 54321/' /etc/ssh/sshd_config
 COPY ./share /home/knote
 RUN chmod 774 /tmp
 RUN chmod -R 774 /var/tmp

@@ -17,6 +17,6 @@ knote:
         - TMPDIR=/tmp
         - RBENV_SHELL=bash
     ports:
-        - "54321:22"
+        - "54321:54321"
     expose:
         - "22"
