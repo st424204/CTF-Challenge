@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exec timeout 120 qemu-system-x86_64 \
+exec timeout 300 qemu-system-x86_64 \
     -m 256M \
     -nographic \
     -kernel /home/knote/bzImage \
