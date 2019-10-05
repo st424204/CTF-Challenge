@@ -2,7 +2,7 @@ FROM ubuntu:19.04
 MAINTAINER Billy
 RUN apt-get update
 RUN apt-get upgrade -y
-RUN apt-get install xinetd libseccomp-dev -y
+RUN apt-get install xinetd libseccomp-dev python -y
 RUN useradd -m note
 COPY ./share /home/note
 COPY ./xinetd /etc/xinetd.d/note
